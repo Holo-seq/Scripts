@@ -4,8 +4,10 @@
 
 #Description: This is a shell script used to map fastq data to genome(mm9 or hg19) and get gene read count for mRNA and total RNA sequencing libraries.
 
-#Usage: RNASeq.sh $1
-	$1 is the basename of fastq file of the sample used call small RNA.
+#Usage: 
+
+	RNASeq.sh $1
+$1 is the basename of fastq file of the sample used call small RNA.
 
 #Note: make sure that GTF file, genome index file, CRG-Flow software and gene_exon_loci.txt file are properly prepared, details see the script and FileFormatDemo.txt.
 
