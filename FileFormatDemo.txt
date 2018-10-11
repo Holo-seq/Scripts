@@ -30,7 +30,7 @@ SE_id,chr,start,end
 3_MACS_peak_903_lociStitched,chr1,182256020,182279663
 
 ##########
-RNA_loci.csv
+gene_loci.csv
 
 id,chr,start,end
 DDX11L1,chr1,11873,14409
