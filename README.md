@@ -14,6 +14,7 @@ $1 is the basename of fastq file of the sample used call small RNA.
 #Note: make sure that GTF file, genome index file, CRG-Flow software and gene_exon_loci.txt file are properly prepared, details see the script and FileFormatDemo.txt.
 
 
+
 ###########################################
 
 #SmallRNASeq.sh
