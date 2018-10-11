@@ -15,14 +15,16 @@
 
 #Description: This is a shell script used to call miRNA, snoRNA and tsRNA from small RNA sequencing libraries.
 
-#Usage: SmallRNASeq.sh $1
-	
-	$1 is the basename of fastq file of the sample used call small RNA.
+#Usage: 
+
+	SmallRNASeq.sh $1
+
+$1 is the basename of fastq file of the sample used call small RNA.
 
 #Note: make sure that GTF file, genome index file, small RNA index files, miRNA_preMiRNA_loci.txt file and CountMatureMirna.R file are 
 properly prepared, details see the script and FileFormatDemo.txt.
 
-	bbduk.sh is a sub script of bbmap.
+bbduk.sh is a sub script of bbmap.
 
 ###########################################
 
