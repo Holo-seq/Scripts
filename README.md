@@ -1,4 +1,5 @@
 ###########################################
+
 #RNAseq.sh
 #Description: This is a shell script used to map fastq data to genome(mm9 or hg19) and get gene read count for mRNA and total RNA sequencing libraries.
 #Usage: RNASeq.sh $1
