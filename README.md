@@ -1,4 +1,6 @@
-Scripts used in the Holo-seq data analysing
+Scripts used in the Holo-seq data analysing.
+Note that all the files should be provided with full path if not in the same directory as the working directory.
+
 
 ###########################################
 
@@ -140,4 +142,9 @@ $perplexity is the perplexity parameter value used to do the t-SNE analysis.
 
 $groupsize1, $groupsize2, $groupsize3 are the sample size of each group, presuming that these samples belong to three group.
 
+
+
+###################
+
+###################
 
