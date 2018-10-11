@@ -36,7 +36,7 @@ $1 is the basename of fastq file of the sample used call small RNA.
 make sure that GTF file, genome index file, small RNA index files, miRNA_preMiRNA_loci.txt file and CountMatureMirna.R file are 
 properly prepared, details see the script and FileFormatDemo.txt.
 
-bbduk.sh is a sub script of bbmap.
+bbduk.sh is a sub script of BBmap.
 
 The working directory needs to be the same with the fastq file's.
 
@@ -145,6 +145,7 @@ $groupsize1, $groupsize2, $groupsize3 are the sample size of each group, presumi
 
 
 ###################
-
+software version:
+TopHat v2.0.11, bedtools v2.19.1, bowtie2 v2.2.2, samtools v0.1.19-44428cd, BBMap v35.85
 ###################
 
