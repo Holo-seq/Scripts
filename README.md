@@ -20,7 +20,6 @@ $1 is the basename of fastq file of the sample used call small RNA.
 #Usage: 
 
 	SmallRNASeq.sh $1
-
 $1 is the basename of fastq file of the sample used call small RNA.
 
 #Note: make sure that GTF file, genome index file, small RNA index files, miRNA_preMiRNA_loci.txt file and CountMatureMirna.R file are 
@@ -33,12 +32,14 @@ bbduk.sh is a sub script of bbmap.
 #FindNegPairs.R
 
 #Description: This is an R script used to find the miRNA and mRNA target pairs expressed in significant negtive correlation with miRNA-
-
 mRNA dual sequencing data.
 
-#Usage: R CMD BATCH "--args $ReadCountMatrix_mRNA.csv $ReadCountMatrix_miRNA.csv $miRNA_mRNA_StrongProvedPairs.txt"
-	$ReadCountMatrix_mRNA.csv and $ReadCountMatrix_miRNA.csv files are read count matrix files of mRNA and miRNA, see FileFormatDemo.txt.
-	$miRNA_mRNA_StrongProvedPairs.txt file contains the miRNA and target mRNA pairs that have been proved by multiple experiments.
+#Usage: 
+
+	R CMD BATCH "--args $ReadCountMatrix_mRNA.csv $ReadCountMatrix_miRNA.csv $miRNA_mRNA_StrongProvedPairs.txt"
+$ReadCountMatrix_mRNA.csv and $ReadCountMatrix_miRNA.csv files are read count matrix files of mRNA and miRNA, see FileFormatDemo.txt.
+
+$miRNA_mRNA_StrongProvedPairs.txt file contains the miRNA and target mRNA pairs that have been proved by multiple experiments.
 
 ###########################################
 #HierarchicalClustering_heatmap.R
