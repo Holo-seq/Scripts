@@ -1,5 +1,5 @@
 
-############
+##############
 ReadCountMatrix*.csv
 
 NO,id,length,sample1_count,sample2_count,sample3_count
@@ -29,8 +29,8 @@ SE_id,chr,start,end
 3_MACS_peak_6657_lociStitched,chr2,235884434,235910668
 3_MACS_peak_903_lociStitched,chr1,182256020,182279663
 
-##########
-gene_loci.csv
+##############
+RNA_loci.csv
 
 id,chr,start,end
 DDX11L1,chr1,11873,14409
@@ -44,7 +44,7 @@ LOC100133331,chr1,323891,328581
 LOC100132287,chr1,323891,328581
 OR4F3,chr1,367658,368597
 
-#############
+##############
 refexon_loci.txt
 
 #chr	gene_start	gene_end	gene_NO	strand	geneid	exon_count	exon_NO	exon_start	exon_end
