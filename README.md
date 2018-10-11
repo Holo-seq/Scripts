@@ -42,12 +42,18 @@ $ReadCountMatrix_mRNA.csv and $ReadCountMatrix_miRNA.csv files are read count ma
 $miRNA_mRNA_StrongProvedPairs.txt file contains the miRNA and target mRNA pairs that have been proved by multiple experiments.
 
 ###########################################
+
 #HierarchicalClustering_heatmap.R
+
 #Description: This is an R script used to do hierarchical clustering and draw heatmaps
-#Usage: R CMD BATCH "--args $ReadCountMatirx.csv $RNA $cut1 $cut2"
-	$ReadCountMatirx.csv is a read count matrix file of mRNA or miRNA, see FileFormatDemo.txt.
-	$RNA can be "miRNA" or "mRNA", depends on your data.
-	$cut1 and cut2 are parameters used to select genes/miRNAs that have no less than $cut1 mapped reads in no less than $cut2 samples.
+
+#Usage: 
+
+	R CMD BATCH "--args $ReadCountMatirx.csv $RNA $cut1 $cut2"
+
+$ReadCountMatirx.csv is a read count matrix file of mRNA or miRNA, see FileFormatDemo.txt.
+$RNA can be "miRNA" or "mRNA", depends on your data.
+$cut1 and cut2 are parameters used to select genes/miRNAs that have no less than $cut1 mapped reads in no less than $cut2 samples.
 
 ###########################################
 #FindSE.R
