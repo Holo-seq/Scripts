@@ -28,7 +28,7 @@ par(pin=c(4,3.5))
 for_tsne <- wholeframe_rpkm_picked_pca$x[,1:sdev_cut]
 groupsize <- args[5:length(args)]
 tsne_out <- Rtsne(for_tsne,dims = 2,perplexity = perp,pca = FALSE) ##perplexity could be adjusted to proper value
-color_vec = sample(colours(),length(groupsize))
+color_vec <- sample(colours(),length(groupsize))
 png("tsneClust.png",width = 5*300,height = 5*300,res = 300,pointsize = 8) 
 plot(tsne_out$Y,main = "t-SNE clustering plot",xlab = "t-sne1",ylab = "t-sne2")
 for(i in 1:length(groupsize)){
