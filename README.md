@@ -138,6 +138,6 @@ $cut1 and $cut2 are parameters used to select genes/miRNAs that have no less tha
 
 $perplexity is the perplexity parameter value used to do the t-SNE analysis.
 
-$groupsize1,$groupsize2,$groupsize3 are the sample size of each group, presuming that these samples belong to three group.
+$groupsize1, $groupsize2, $groupsize3 are the sample size of each group, presuming that these samples belong to three group.
 
 
