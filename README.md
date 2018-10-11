@@ -8,10 +8,12 @@ Scripts used in the Holo-seq data analysing
 
 #Usage: 
 
-	./RNASeq.sh $1
+	RNASeq.sh $1
 $1 is the basename of fastq file of the sample used call small RNA.
 
 #Note: make sure that GTF file, genome index file, CRG-Flow software and gene_exon_loci.txt file are properly prepared, details see the script and FileFormatDemo.txt.
+
+The working directory needs to be the same with the fastq file's.
 
 
 ###########################################
@@ -22,7 +24,7 @@ $1 is the basename of fastq file of the sample used call small RNA.
 
 #Usage: 
 
-	./SmallRNASeq.sh $1
+	SmallRNASeq.sh $1
 $1 is the basename of fastq file of the sample used call small RNA.
 
 #Note: make sure that GTF file, genome index file, small RNA index files, miRNA_preMiRNA_loci.txt file and CountMatureMirna.R file are 
@@ -30,6 +32,7 @@ properly prepared, details see the script and FileFormatDemo.txt.
 
 bbduk.sh is a sub script of bbmap.
 
+The working directory needs to be the same with the fastq file's.
 
 ###########################################
 
@@ -87,11 +90,12 @@ $SE_loci.csv file contains the loci of a super enhancer, see FileFormatDemo.txt.
 
 #Usage: 
 
-	./CoverageCalculate.sh $1
+	CoverageCalculate.sh $1
 $1 is the basename of fastq file of the sample used to calculate the coverage.
 
 #Note: make sure that GTF file, genome index files, refexon_bed.txt file and CoverageCalculate.R file are properly prepared, details see the script and FileFormatDemo.txt.
 
+The working directory needs to be the same with the fastq file's.
 
 ###########################################
 
