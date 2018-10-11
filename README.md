@@ -23,8 +23,13 @@ properly prepared, details see the script and FileFormatDemo.txt.
 	bbduk.sh is a sub script of bbmap.
 
 ###########################################
+
 #FindNegPairs.R
-#Description: This is an R script used to find the miRNA and mRNA target pairs expressed in significant negtive correlation with miRNA-mRNA dual sequencing data.
+
+#Description: This is an R script used to find the miRNA and mRNA target pairs expressed in significant negtive correlation with miRNA-
+
+mRNA dual sequencing data.
+
 #Usage: R CMD BATCH "--args $ReadCountMatrix_mRNA.csv $ReadCountMatrix_miRNA.csv $miRNA_mRNA_StrongProvedPairs.txt"
 	$ReadCountMatrix_mRNA.csv and $ReadCountMatrix_miRNA.csv files are read count matrix files of mRNA and miRNA, see FileFormatDemo.txt.
 	$miRNA_mRNA_StrongProvedPairs.txt file contains the miRNA and target mRNA pairs that have been proved by multiple experiments.
