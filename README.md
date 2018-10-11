@@ -1,3 +1,5 @@
+
+
 ###########################################
 
 #RNAseq.sh
@@ -10,6 +12,7 @@
 $1 is the basename of fastq file of the sample used call small RNA.
 
 #Note: make sure that GTF file, genome index file, CRG-Flow software and gene_exon_loci.txt file are properly prepared, details see the script and FileFormatDemo.txt.
+
 
 ###########################################
 
@@ -27,6 +30,7 @@ properly prepared, details see the script and FileFormatDemo.txt.
 
 bbduk.sh is a sub script of bbmap.
 
+
 ###########################################
 
 #FindNegPairs.R
@@ -40,6 +44,7 @@ mRNA dual sequencing data.
 $ReadCountMatrix_mRNA.csv and $ReadCountMatrix_miRNA.csv files are read count matrix files of mRNA and miRNA, see FileFormatDemo.txt.
 
 $miRNA_mRNA_StrongProvedPairs.txt file contains the miRNA and target mRNA pairs that have been proved by multiple experiments.
+
 
 ###########################################
 
@@ -57,6 +62,7 @@ $RNA can be "miRNA" or "mRNA", depends on your data.
 
 $cut1 and cut2 are parameters used to select genes/miRNAs that have no less than $cut1 mapped reads in no less than $cut2 samples.
 
+
 ###########################################
 
 #FindSE.R
@@ -72,6 +78,7 @@ $SE_loci.csv file contains the loci of a super enhancer, see FileFormatDemo.txt.
 
 #Note: the output gene/miRNA and super enhancer pairs need to be further corrected by fingdings of published studies(see method in paper).
 
+
 ###########################################
 
 #CoverageCalculate.sh
@@ -84,6 +91,7 @@ $SE_loci.csv file contains the loci of a super enhancer, see FileFormatDemo.txt.
 $1 is the basename of fastq file of the sample used to calculate the coverage.
 
 #Note: make sure that GTF file, genome index files, refexon_bed.txt file and CoverageCalculate.R file are properly prepared, details see the script and FileFormatDemo.txt.
+
 
 ###########################################
 
@@ -101,6 +109,7 @@ $ReadCountMatrix_mRNA.csv is  a read count matrix file of mRNA, see FileFormatDe
 $cut1 and $cut2 are parameters used to select miRNAs that have no less than $cut1 mapped reads in no less than $cut2 samples.
 
 $cut3 and $cut4 are parameters used to select mRNAs that have no less than $cut3 mapped reads in no less than $cut3 samples.
+
 
 ###########################################
 
