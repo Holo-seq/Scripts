@@ -52,7 +52,9 @@ $miRNA_mRNA_StrongProvedPairs.txt file contains the miRNA and target mRNA pairs 
 	R CMD BATCH "--args $ReadCountMatirx.csv $RNA $cut1 $cut2"
 
 $ReadCountMatirx.csv is a read count matrix file of mRNA or miRNA, see FileFormatDemo.txt.
+
 $RNA can be "miRNA" or "mRNA", depends on your data.
+
 $cut1 and cut2 are parameters used to select genes/miRNAs that have no less than $cut1 mapped reads in no less than $cut2 samples.
 
 ###########################################
