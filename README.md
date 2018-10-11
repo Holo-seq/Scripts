@@ -10,7 +10,7 @@ Note that all the files should be provided with full path if not in the same dir
 
 #Usage: 
 
-	RNASeq.sh $1
+		RNASeq.sh $1
 $1 is the basename of fastq file of the sample used call small RNA.
 
 #Note:
@@ -28,7 +28,7 @@ The working directory needs to be the same with the fastq file's.
 
 #Usage: 
 
-	SmallRNASeq.sh $1
+		SmallRNASeq.sh $1
 $1 is the basename of fastq file of the sample used call small RNA.
 
 #Note:
@@ -49,7 +49,7 @@ mRNA dual sequencing data.
 
 #Usage: 
 
-	R CMD BATCH "--args $ReadCountMatrix_mRNA.csv $ReadCountMatrix_miRNA.csv $miRNA_mRNA_StrongProvedPairs.txt"
+		R CMD BATCH "--args $ReadCountMatrix_mRNA.csv $ReadCountMatrix_miRNA.csv $miRNA_mRNA_StrongProvedPairs.txt"
 $ReadCountMatrix_mRNA.csv and $ReadCountMatrix_miRNA.csv files are read count matrix files of mRNA and miRNA, see FileFormatDemo.txt.
 
 $miRNA_mRNA_StrongProvedPairs.txt file contains the miRNA and target mRNA pairs that have been proved by multiple experiments.
@@ -63,7 +63,7 @@ $miRNA_mRNA_StrongProvedPairs.txt file contains the miRNA and target mRNA pairs 
 
 #Usage: 
 
-	R CMD BATCH "--args $ReadCountMatirx.csv $RNA $cut1 $cut2"
+		R CMD BATCH "--args $ReadCountMatirx.csv $RNA $cut1 $cut2"
 
 $ReadCountMatirx.csv is a read count matrix file of mRNA or miRNA, see FileFormatDemo.txt.
 
@@ -80,7 +80,7 @@ $cut1 and cut2 are parameters used to select genes/miRNAs that have no less than
 
 #Usage: 
 
-	R CMD BATCH "--args $RNA_loci.csv $SE_loci.csv"
+		R CMD BATCH "--args $RNA_loci.csv $SE_loci.csv"
 $RNA_loci.csv file contains the loci of a gene or miRNA on genome, see FileFormatDemo.txt.
 
 $SE_loci.csv file contains the loci of a super enhancer, see FileFormatDemo.txt.
@@ -98,7 +98,7 @@ the output gene/miRNA and super enhancer pairs need to be further corrected by f
 
 #Usage: 
 
-	CoverageCalculate.sh $1
+		CoverageCalculate.sh $1
 $1 is the basename of fastq file of the sample used to calculate the coverage.
 
 #Note: 
@@ -115,7 +115,7 @@ The working directory needs to be the same with the fastq file's.
 
 #Usage: 
 
-	R CMD BATCH "--args $ReadCountMatrix_miRNA.csv $ReadCountMatrix_mRNA.csv $cut1 $cut2 $cut3 $cut4"
+		R CMD BATCH "--args $ReadCountMatrix_miRNA.csv $ReadCountMatrix_mRNA.csv $cut1 $cut2 $cut3 $cut4"
 $ReadCountMatrix_miRNA.csv is a read count matrix file of miRNA, see FileFormatDemo.txt.
 
 $ReadCountMatrix_mRNA.csv is a read count matrix file of mRNA, see FileFormatDemo.txt.
@@ -133,7 +133,7 @@ $cut3 and $cut4 are parameters used to select mRNAs that have no less than $cut3
 
 #Usage: 
 
-	R CMD BATCH "--args $ReadCountMatirx.csv $cut1 $cut2 $perplexity $groupsize1 $groupsize2 $groupsize3"
+		R CMD BATCH "--args $ReadCountMatirx.csv $cut1 $cut2 $perplexity $groupsize1 $groupsize2 $groupsize3"
 $ReadCountMatirx.csv is a read count matrix file of mRNA or miRNA, see FileFormatDemo.txt.
 
 $cut1 and $cut2 are parameters used to select genes/miRNAs that have no less than $cut1 mapped reads in no less than $cut2 samples.
