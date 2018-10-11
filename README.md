@@ -11,7 +11,9 @@ Scripts used in the Holo-seq data analysing
 	RNASeq.sh $1
 $1 is the basename of fastq file of the sample used call small RNA.
 
-#Note: make sure that GTF file, genome index file, CRG-Flow software and gene_exon_loci.txt file are properly prepared, details see the script and FileFormatDemo.txt.
+#Note:
+
+make sure that GTF file, genome index file, CRG-Flow software and gene_exon_loci.txt file are properly prepared, details see the script and FileFormatDemo.txt.
 
 The working directory needs to be the same with the fastq file's.
 
@@ -27,7 +29,9 @@ The working directory needs to be the same with the fastq file's.
 	SmallRNASeq.sh $1
 $1 is the basename of fastq file of the sample used call small RNA.
 
-#Note: make sure that GTF file, genome index file, small RNA index files, miRNA_preMiRNA_loci.txt file and CountMatureMirna.R file are 
+#Note:
+
+make sure that GTF file, genome index file, small RNA index files, miRNA_preMiRNA_loci.txt file and CountMatureMirna.R file are 
 properly prepared, details see the script and FileFormatDemo.txt.
 
 bbduk.sh is a sub script of bbmap.
@@ -79,7 +83,9 @@ $RNA_loci.csv file contains the loci of a gene or miRNA on genome, see FileForma
 
 $SE_loci.csv file contains the loci of a super enhancer, see FileFormatDemo.txt.
 
-#Note: the output gene/miRNA and super enhancer pairs need to be further corrected by fingdings of published studies(see method in paper).
+#Note:
+
+the output gene/miRNA and super enhancer pairs need to be further corrected by fingdings of published studies(see method in paper).
 
 
 ###########################################
@@ -93,7 +99,9 @@ $SE_loci.csv file contains the loci of a super enhancer, see FileFormatDemo.txt.
 	CoverageCalculate.sh $1
 $1 is the basename of fastq file of the sample used to calculate the coverage.
 
-#Note: make sure that GTF file, genome index files, refexon_bed.txt file and CoverageCalculate.R file are properly prepared, details see the script and FileFormatDemo.txt.
+#Note: 
+
+make sure that GTF file, genome index files, refexon_bed.txt file and CoverageCalculate.R file are properly prepared, details see the script and FileFormatDemo.txt.
 
 The working directory needs to be the same with the fastq file's.
 
@@ -106,9 +114,9 @@ The working directory needs to be the same with the fastq file's.
 #Usage: 
 
 	R CMD BATCH "--args $ReadCountMatrix_miRNA.csv $ReadCountMatrix_mRNA.csv $cut1 $cut2 $cut3 $cut4"
-$ReadCountMatrix_miRNA.csv is  a read count matrix file of miRNA, see FileFormatDemo.txt.
+$ReadCountMatrix_miRNA.csv is a read count matrix file of miRNA, see FileFormatDemo.txt.
 
-$ReadCountMatrix_mRNA.csv is  a read count matrix file of mRNA, see FileFormatDemo.txt.
+$ReadCountMatrix_mRNA.csv is a read count matrix file of mRNA, see FileFormatDemo.txt.
 
 $cut1 and $cut2 are parameters used to select miRNAs that have no less than $cut1 mapped reads in no less than $cut2 samples.
 
