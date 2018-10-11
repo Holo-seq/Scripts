@@ -145,7 +145,10 @@ $groupsize1, $groupsize2, $groupsize3 are the sample size of each group, presumi
 
 
 ###################
+
 software version:
+
 TopHat v2.0.11, bedtools v2.19.1, bowtie2 v2.2.2, samtools v0.1.19-44428cd, BBMap v35.85
+
 ###################
 
